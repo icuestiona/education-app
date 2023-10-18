@@ -226,7 +226,7 @@ let all_tutors = [
     subject: "Spanish",
     availability: "weekend",
     schedule: "morning",
-    image: t21_img,
+    image: t24_img,
   },
   {
     id: 25,
