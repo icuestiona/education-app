@@ -1,0 +1,69 @@
+.hero {
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+.hero-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0 50px;
+  line-height: 1.1;
+}
+.hero-left h2 {
+  color: #090909;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.hero-left .hero-title h1 {
+  color: #090909;
+  font-size: 3.5rem;
+  line-height: 80px;
+  font-weight: 700;
+  margin: 0;
+}
+.hero-left .hero-presentation p {
+  color: #171717;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin: auto;
+  margin-top: 1.1em;
+}
+
+.find-tutors button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 170px;
+  height: 70px;
+  border-radius: 75px;
+  margin-top: 20px;
+  background: #ff4141;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-right img {
+  width: 90%;
+}
