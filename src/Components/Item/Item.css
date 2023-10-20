@@ -1,0 +1,33 @@
+.tutor-data {
+  width: 300px;
+}
+.tutor-data p {
+  margin: 3px 0px;
+  font-size: 18px;
+}
+.tutor-data img {
+  width: 75%;
+}
+.tutor-info {
+  display: flex;
+  gap: 10px;
+}
+.tutor-subject {
+  color: #425067;
+  font-size: 16px;
+  font-weight: 600;
+}
+.tutor-days {
+  color: #425067;
+  font-size: 16px;
+  font-weight: 600;
+}
+.tutor-hours {
+  color: #425067;
+  font-size: 16px;
+  font-weight: 600;
+}
+.tutor-data:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+}
