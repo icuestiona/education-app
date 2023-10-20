@@ -1,10 +1,13 @@
 import React from "react";
-import logo from "../Assets/logo.png"; // Adjust the path to match your folder structure
+import logo from "../Assets/logo.png";
 import "./Navbar.css";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [menu, setMenu] = useState("class");
   return (
-    <nav className="sticky">
+    <nav className="navbar">
       <div className="left-section">
         <div className="logo">
           <a href="/">
@@ -12,36 +15,113 @@ const Navbar = () => {
           </a>
         </div>
         <ul className="nav-links">
-          <li>
-            <a href="#">About Us</a>
+          <li
+            onClick={() => {
+              setMenu("home");
+            }}
+          >
+            <Link style={{ textDecoration: "none" }} to="/home">
+              Home
+            </Link>{" "}
+            {menu === "home" ? <hr /> : <></>}
+          </li>
+          <li
+            onClick={() => {
+              setMenu("about");
+            }}
+          >
+            <Link style={{ textDecoration: "none" }} to="/about">
+              About Us
+            </Link>{" "}
+            {menu === "about" ? <hr /> : <></>}
           </li>
           <li className="dropdown">
             <a href="#" className="dropbtn">
               Find Tutors
             </a>
             <div className="dropdown-content">
-              <a href="#">All Tutors</a>
-              <a href="#">Subjects</a>
-              <a href="#">Languages</a>
+              <a
+                href="#"
+                onClick={() => {
+                  setMenu("tutors");
+                }}
+              >
+                <Link style={{ textDecoration: "none" }} to="/tutors">
+                  Tutors
+                </Link>{" "}
+                {menu === "tutors" ? <hr /> : <></>}
+              </a>
+              <a
+                href="#"
+                onClick={() => {
+                  setMenu("subjects");
+                }}
+              >
+                <Link style={{ textDecoration: "none" }} to="/subjects">
+                  Subjects
+                </Link>{" "}
+                {menu === "subjects" ? <hr /> : <></>}
+              </a>
+              <a
+                href="#"
+                onClick={() => {
+                  setMenu("languages");
+                }}
+              >
+                <Link style={{ textDecoration: "none" }} to="/languages">
+                  Languages
+                </Link>{" "}
+                {menu === "languages" ? <hr /> : <></>}
+              </a>
             </div>
           </li>
-          <li>
-            <a href="#">Match me with Tutors</a>
+          <li
+            onClick={() => {
+              setMenu("match");
+            }}
+          >
+            <Link style={{ textDecoration: "none" }} to="/match">
+              Match me with Tutors
+            </Link>{" "}
+            {menu === "match" ? <hr /> : <></>}
           </li>
-          <li>
-            <a href="#">Join Us</a>
+          <li
+            onClick={() => {
+              setMenu("join");
+            }}
+          >
+            <Link style={{ textDecoration: "none" }} to="/join">
+              Join Us
+            </Link>{" "}
+            {menu === "join" ? <hr /> : <></>}
           </li>
-          <li>
-            <a href="#">Donate</a>
+          <li
+            onClick={() => {
+              setMenu("donate");
+            }}
+          >
+            <Link style={{ textDecoration: "none" }} to="/donate">
+              Donate
+            </Link>{" "}
+            {menu === "donate" ? <hr /> : <></>}
           </li>
-          <li>
-            <a href="#">Contact</a>
+          <li
+            onClick={() => {
+              setMenu("contact");
+            }}
+          >
+            <Link style={{ textDecoration: "none" }} to="/contact">
+              Contact
+            </Link>{" "}
+            {menu === "contact" ? <hr /> : <></>}
           </li>
         </ul>
       </div>
-      <button className="login-section">
-        <a href="#">Sign In</a>
-      </button>
+      <div className="nav-login">
+        <Link to="/login">
+          <button>Sign In</button>
+        </Link>
+      </div>
     </nav>
   );
 };

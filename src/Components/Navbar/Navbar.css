@@ -2,14 +2,13 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   background-color: #4d7a96;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.navbar {
+  position: sticky;
+  top: 0px;
 }
 
 .left-section {
@@ -24,7 +23,6 @@ nav {
 
 .nav-links {
   list-style-type: none;
-  padding: 0;
   margin: 15px;
   display: flex;
   align-items: center;
@@ -32,15 +30,20 @@ nav {
 
 .nav-links li {
   margin-right: 40px;
+  cursor: pointer;
+}
+
+.nav-links hr {
+  border: none;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background: #ff4141;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
-}
-
-.nav-links a:hover {
-  border-bottom: 2px solid #18a2b8;
 }
 
 .dropdown {
@@ -51,23 +54,30 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
+  text-align: left;
+  float: none;
   background-color: #f9f9f9;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  text-decoration: none;
 }
 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .dropdown-content a {
   display: block;
   text-align: left;
   color: #616161;
   float: none;
   padding: 12px 16px;
+  cursor: pointer;
   text-decoration: none;
 }
-
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown-content a:hover {
+  border-bottom: 2px solid #f9f9f9;
+  text-decoration: none;
+  color: #4d7a96;
 }
 
 .right-section {
@@ -92,7 +102,7 @@ nav {
   display: block;
 }
 
-button {
+.nav-login button {
   display: block;
   align-items: center;
   width: 120px;
@@ -105,16 +115,16 @@ button {
   font-weight: 500;
   background: white;
   cursor: pointer;
-}
-
-button a {
-  padding: 10px 20px;
   text-decoration: none;
 }
 
-button:hover {
-  background-color: rgb(239, 239, 244);
-  color: #35424a;
+.nav-login button:active {
+  background: rgb(222, 222, 246);
+  transition-duration: 0, 5s;
+}
+
+.nav-links {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
