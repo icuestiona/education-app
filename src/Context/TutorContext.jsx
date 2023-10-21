@@ -3,12 +3,12 @@ import all_tutors from "../Components/Assets/all_tutors";
 
 export const TutorContext = createContext(null);
 
-const TutorContextProvider = (tutor) => {
+const TutorContextProvider = (props) => {
   const contextValue = { all_tutors };
 
   return (
     <TutorContext.Provider value={contextValue}>
-      {tutor.children}
+      {props.children}
     </TutorContext.Provider>
   );
 };
