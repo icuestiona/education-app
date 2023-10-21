@@ -1,0 +1,49 @@
+.about-page {
+  background: linear-gradient(to bottom, #f2f2f2, #ffffff);
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.about-page .about-banner img {
+  height: 90%;
+}
+
+.about-page .about-title h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0;
+  padding: 30px;
+}
+
+.about-page .about-content {
+  width: 80%;
+  column-count: 2;
+  column-gap: 40px;
+  column-rule-style: solid;
+  padding: 20px;
+  column-rule-width: 1px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.about-buttons {
+  margin-top: 20px;
+}
+
+.about-buttons a {
+  margin: 10px;
+  text-decoration: none;
+  color: #ff4141;
+}
+
+.about-buttons a:hover {
+  text-decoration: underline;
+}
