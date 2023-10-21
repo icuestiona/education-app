@@ -6,13 +6,20 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("class");
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+    setMenu("find-tutors");
+  };
+
   return (
     <nav className="navbar">
       <div className="left-section">
         <div className="logo">
-          <a href="/">
+          <Link to="/">
             <img src={logo} alt="Logo" />
-          </a>
+          </Link>
         </div>
         <ul className="nav-links">
           <li
@@ -20,7 +27,7 @@ const Navbar = () => {
               setMenu("home");
             }}
           >
-            <Link style={{ textDecoration: "none" }} to="/home">
+            <Link style={{ textDecoration: "none" }} to="/">
               Home
             </Link>{" "}
             {menu === "home" ? <hr /> : <></>}
@@ -35,45 +42,16 @@ const Navbar = () => {
             </Link>{" "}
             {menu === "about" ? <hr /> : <></>}
           </li>
-          <li className="dropdown">
-            <a href="#" className="dropbtn">
-              Find Tutors
-            </a>
-            <div className="dropdown-content">
-              <a
-                href="#"
-                onClick={() => {
-                  setMenu("tutors");
-                }}
-              >
-                <Link style={{ textDecoration: "none" }} to="/tutors">
-                  Tutors
-                </Link>{" "}
-                {menu === "tutors" ? <hr /> : <></>}
-              </a>
-              <a
-                href="#"
-                onClick={() => {
-                  setMenu("subjects");
-                }}
-              >
-                <Link style={{ textDecoration: "none" }} to="/subjects">
-                  Subjects
-                </Link>{" "}
-                {menu === "subjects" ? <hr /> : <></>}
-              </a>
-              <a
-                href="#"
-                onClick={() => {
-                  setMenu("languages");
-                }}
-              >
-                <Link style={{ textDecoration: "none" }} to="/languages">
-                  Languages
-                </Link>{" "}
-                {menu === "languages" ? <hr /> : <></>}
-              </a>
-            </div>
+          <li className="dropdown" onClick={toggleDropdown}>
+            <span className="dropbtn">Find Tutors</span>
+            {menu === "find-tutors" && <hr />}
+            {showDropdown && (
+              <div className="dropdown-content">
+                <Link to="/tutors">Tutors</Link>
+                <Link to="/subjects">Subjects</Link>
+                <Link to="/availability">Availability</Link>
+              </div>
+            )}
           </li>
           <li
             onClick={() => {
@@ -118,7 +96,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="nav-login">
-        <Link to="/login">
+        <Link style={{ textDecoration: "none" }} to="/login">
           <button>Sign In</button>
         </Link>
       </div>
