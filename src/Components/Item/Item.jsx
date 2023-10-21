@@ -7,9 +7,11 @@ const Item = (tutor) => {
       <img src={tutor.image} alt="" />
       <p>{tutor.name}</p>
       <div className="tutor-info">
-        <div className="tutor-subject">{tutor.subject}</div>
-        <div className="tutor-days">{tutor.availability}</div>
-        <div className="tutor-hours">{tutor.schedule}</div>
+        <p>{tutor.subject}</p>
+        <div className="tutor-days">
+          <p>{tutor.availability}</p>
+          <p>{tutor.schedule}</p>
+        </div>
       </div>
     </div>
   );
