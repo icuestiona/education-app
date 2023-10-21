@@ -1,36 +1,39 @@
-.tutorcategory-banner {
-  display: block;
-  margin: 30px auto;
-  width: 82%;
+.tutor-category div h2 {
+  color: #171717;
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  padding: 40px 70px;
 }
-.tutorcategory-indexSort {
+.tutor-category .tutorcategory-indexSort {
   display: flex;
   margin: 0px 170px;
   justify-content: space-between;
   align-items: center;
 }
-.tutorcategory-sort {
+
+.tutor-category .tutorcategory-indexSort p span {
+  font-weight: 600;
+}
+.tutor-category .tutorcategory-sort {
   padding: 10px 20px;
   border-radius: 40px;
   border: 1px solid #888;
 }
-.tutorcategory-indexSort p span {
-  font-weight: 600;
-}
 
-.tutorcategory-products {
+.tutorcategory-tutors {
   margin: 20px 170px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 15px;
   row-gap: 80px;
 }
 
-.tutorcategory-loadmore {
+.tutor-category .loadmore {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 150px auto;
+  margin: 120px auto;
   width: 233px;
   height: 69px;
   border-radius: 75px;

@@ -6,16 +6,19 @@ import Item from "../Components/Item/Item";
 
 const TutorCategory = (props) => {
   const { all_tutors } = useContext(TutorContext);
+
   const filteredTutors = all_tutors.filter(
     (tutor) => tutor.category === props.category
   );
 
   return (
     <div className="tutor-category">
-      <img className="tutorcategory-banner" src={props.banner} alt="" />
+      <div>
+        <h2>Volunteer Tutors, Changing Lives, Brightening Futures</h2>
+      </div>
       <div className="tutorcategory-indexSort">
         <p>
-          <span>Showing 1-{filteredTutors.length}</span> out of{" "}
+          <span>Showing {filteredTutors.length}</span> out of{" "}
           {all_tutors.length} tutors
         </p>
         <div className="tutorcategory-sort">
@@ -23,7 +26,7 @@ const TutorCategory = (props) => {
         </div>
       </div>
       <div className="tutorcategory-tutors">
-        {filteredTutors.map((tutor) => (
+        {all_tutors.map((tutor) => (
           <Item
             key={tutor.id}
             name={tutor.name}
