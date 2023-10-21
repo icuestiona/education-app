@@ -1,0 +1,44 @@
+.contact-page {
+  background: linear-gradient(to bottom, #f2f2f2, #ffffff);
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.contact-page .contact-title h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0;
+  padding: 30px;
+}
+
+.contact-page .contact-content {
+  width: 80%;
+  column-count: 2;
+  column-gap: 40px;
+  column-rule-style: solid;
+  padding: 20px;
+  column-rule-width: 1px;
+}
+
+.contact-content p {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.contact-buttons {
+  margin-top: 20px;
+}
+
+.contact-buttons a {
+  margin: 10px;
+  text-decoration: none;
+  color: #ff4141;
+}
+
+.contact-buttons a:hover {
+  text-decoration: underline;
+}
