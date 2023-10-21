@@ -1,40 +1,49 @@
-import t1_img from "./tutor1.jpg";
-import t2_img from "./tutor2.jpg";
-import t3_img from "./tutor3.jpg";
-import t4_img from "./tutor4.jpg";
+import t15_img from "./tutor15.jpg";
+import t5_img from "./tutor5.jpg";
+import t10_img from "./tutor10.jpg";
+import t8_img from "./tutor8.jpg";
+import t19_img from "./tutor19.jpg";
 
 let data_tutors = [
   {
-    id: 1,
-    name: "Oscar Simmons",
-    subject: "Mathematics",
-    availability: "weekday",
-    schedule: "morning",
-    image: t1_img,
-  },
-  {
-    id: 2,
-    name: "Carla Wilson",
-    subject: "English",
-    availability: "weekday",
-    schedule: "afternoon",
-    image: t2_img,
-  },
-  {
-    id: 3,
-    name: "Ian Evans",
-    subject: "Literature",
-    availability: "weekend",
-    schedule: "morning",
-    image: t3_img,
-  },
-  {
-    id: 4,
-    name: "Marla Johnson",
+    id: 15,
+    name: "Amelia Moore",
     subject: "Chemistry ",
-    availability: "weekend",
+    availability: "Weekend",
+    schedule: "morning",
+    image: t15_img,
+  },
+  {
+    id: 5,
+    name: "Cora Campbell",
+    subject: "Computer Science",
+    availability: "Weekday",
+    schedule: "evening",
+    image: t5_img,
+  },
+  {
+    id: 10,
+    name: "Leo Harris",
+    subject: "English",
+    availability: "Weekday",
     schedule: "afternoon",
-    image: t4_img,
+    image: t10_img,
+  },
+  {
+    id: 8,
+    name: "Helen Allen",
+    subject: "Literature",
+    availability: "Weekday",
+    schedule: "evening",
+    image: t8_img,
+  },
+  {
+    id: 19,
+    name: "Joseph Fisher",
+    subject: "Literature",
+    availability: "Weekend",
+    schedule: "morning",
+    image: t19_img,
   },
 ];
 
