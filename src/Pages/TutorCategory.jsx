@@ -18,7 +18,7 @@ const TutorCategory = (props) => {
       </div>
       <div className="tutorcategory-indexSort">
         <p>
-          <span>Showing {filteredTutors.length}</span> out of{" "}
+          <span>Filtering {filteredTutors.length}</span> out of{" "}
           {all_tutors.length} tutors
         </p>
         <div className="tutorcategory-sort">
