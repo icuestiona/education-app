@@ -45,7 +45,7 @@ const JoinUs = () => {
       </div>
       <div className="join-buttons">
         <a href="/">Home</a>
-        <a href="/">Register</a>
+        <a href="">Register</a>
       </div>
     </div>
   );
