@@ -1,11 +1,13 @@
 .container {
   display: flex;
+  height: 90vh;
   flex-direction: column;
   margin: auto;
   margin-top: 80px;
   width: 600px;
   background: #fff;
   padding-bottom: 30px;
+  background-color: #edf5f9;
 }
 
 .header {
