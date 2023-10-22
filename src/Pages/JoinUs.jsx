@@ -45,7 +45,7 @@ const JoinUs = () => {
       </div>
       <div className="join-buttons">
         <a href="/">Home</a>
-        <a href="https://enlight-net.netlify.app/join">Register</a>
+        <a href="/contact">Contact</a>
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ const Donate = () => {
       </div>
       <div className="donate-buttons">
         <a href="/">Home</a>
-        <a href="https://enlight-net.netlify.app/contact">Contact</a>
+        <a href="/contact">Contact</a>
       </div>
     </div>
   );
