@@ -40,7 +40,6 @@ function About() {
       </div>
       <div className="about-buttons">
         <a href="/">Home</a>
-        <a href="/join">Join Us</a>
       </div>
     </div>
   );

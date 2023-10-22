@@ -32,7 +32,6 @@ const Contact = () => {
       </div>
       <div className="contact-buttons">
         <a href="/">Home</a>
-        <a href="/about">About</a>
       </div>
     </div>
   );
