@@ -40,7 +40,7 @@ function About() {
       </div>
       <div className="about-buttons">
         <a href="/">Home</a>
-        <a href="/join">Join Us</a>
+        <a href="https://enlight-net.netlify.app/join">Join Us</a>
       </div>
     </div>
   );
