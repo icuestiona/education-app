@@ -5,7 +5,7 @@ const Donate = () => {
   return (
     <div className="donate-page">
       <div className="donate-title">
-        <h1> Join Us: Become a Changemaker! </h1>
+        <h1> Every Click Lights the Path of Learning </h1>
       </div>
       <div className="donate-content">
         <p>
