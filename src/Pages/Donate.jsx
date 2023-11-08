@@ -34,6 +34,7 @@ const Donate = () => {
       </div>
       <div className="donate-buttons">
         <a href="/">Home</a>
+        <a href=" ">Donate</a>
       </div>
     </div>
   );
