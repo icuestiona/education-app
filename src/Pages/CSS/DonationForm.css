@@ -1,0 +1,107 @@
+/* DonationForm.css */
+
+.donation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  height: 800px;
+  margin: auto;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #edf5f9;
+}
+
+.donation-form h2 {
+  color: #213c4d;
+  font-size: 30px;
+  font-weight: 600px;
+  text-align: center;
+}
+
+.amount-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.amount-options label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #edf5f9;
+}
+
+.amount-options label input:checked {
+  background-color: #4caf50;
+  color: #213c4d;
+}
+
+.amount-options label[for="custom-amount"] {
+  grid-column: span 3; /* Span three columns for the custom amount label */
+  gap: 80px;
+}
+
+.amount-options label[for="custom-amount"] input[type="text"] {
+  width: calc(100% - 20px); /* Adjust the width as needed */
+  padding: 8px; /* Add more padding if needed */
+}
+
+/* Additional styling for the placeholder */
+.amount-options label[for="custom-amount"] input[type="text"]::placeholder {
+  padding-left: 5px; /* Add padding to the left of the placeholder */
+}
+
+.donation-frequency p {
+  font-size: 16px;
+  font-weight: 600px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff4141;
+  color: white;
+  padding: 15px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 75px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(235, 230, 230);
+  color: #213c4d;
+  border: 1px solid #cfc7c7;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 600px) {
+  .donation-form {
+    width: 100%;
+  }
+}
