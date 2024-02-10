@@ -30,16 +30,24 @@
   line-height: 1.2;
 }
 
-.donate-buttons {
-  margin-top: 20px;
-}
-
-.donate-buttons a {
-  margin: 10px;
+.donate-button button {
+  display: block;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  outline: none;
+  border: 1px solid #e3e0e0;
+  border-radius: 75px;
+  color: #f1efef;
+  font-size: 16px;
+  font-weight: 500;
+  background: #ff4141;
+  cursor: pointer;
   text-decoration: none;
-  color: #ff4141;
+  margin-top: 50px;
 }
 
-.donate-buttons a:hover {
-  text-decoration: underline;
+.donate-button button:active {
+  background: rgb(222, 222, 246);
+  transition-duration: 0, 5s;
 }
