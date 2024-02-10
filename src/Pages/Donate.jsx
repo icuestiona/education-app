@@ -1,5 +1,6 @@
 import React from "react";
 import "./CSS/Donate.css";
+import { Link } from "react-router-dom";
 
 const Donate = () => {
   return (
@@ -32,9 +33,10 @@ const Donate = () => {
           endeavor—click below to make a donation and be a beacon of hope! 💫✨"
         </p>
       </div>
-      <div className="donate-buttons">
-        <a href="/">Home</a>
-        <a href=" ">Donate</a>
+      <div className="donate-button">
+        <Link style={{ textDecoration: "none" }} to="/donate-now">
+          <button>Donate Now</button>
+        </Link>
       </div>
     </div>
   );
