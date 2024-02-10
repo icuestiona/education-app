@@ -9,6 +9,7 @@ import Footer from "./Components/Footer/Footer";
 import JoinUs from "./Pages/JoinUs";
 import Donate from "./Pages/Donate";
 import Contact from "./Pages/Contact";
+import DonationForm from "./Pages/DonationForm";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/donate" element={<Donate />} />
         <Route path="/login" element={<LoginSignUp />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/donate-now" element={<DonationForm />} />
       </Routes>
       <Footer />
     </BrowserRouter>
