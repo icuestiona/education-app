@@ -5,14 +5,14 @@ _(Finalist in the Hackathon for Social Good 2023 by Women Who Code)_
 
 **EnlightNet** is a web platform that connects volunteers with underprivileged or vulnerable children to support and reinforce their academic development. The platform aims to bridge educational gaps by pairing tutors (teachers, professionals, but also committed citizens willing to donate part of their time) with students based on compatibility factors like age, subjects, and availability.
 
-## Key Features ✅
+### Key Features ✅
 * **Matching System (In Progress)** – Algorithm to pair tutors and students based on needs.
 * **Interactive UI** – Built with React.js, styled-components, and responsive design.
 * **Multi-Page Navigation** – React Router for seamless page transitions.
 * **Dynamic Components** – Navbar with dropdown, Hero carousel, and Footer.
 * **Donation & Contact Pages** – Support the initiative.
   
-## Pending Work 🚧
+### Pending Work 🚧
 * **Matching Algorithm** – Develop a system to pair tutors and students based on:
   * Age/grade level
   * Academic subjects needed
@@ -22,7 +22,7 @@ _(Finalist in the Hackathon for Social Good 2023 by Women Who Code)_
 * **Integrated Communication Tool**  – Add video call functionality (e.g., WebRTC or third-party API).
 * **User Dashboard**  – Track sessions, progress, and messages.
 
-## Technologies Used 🛠️
+### Technologies Used 🛠️
 
 ### Frontend
 * **React.js** (v18.2.0) – Core framework
@@ -33,7 +33,7 @@ _(Finalist in the Hackathon for Social Good 2023 by Women Who Code)_
 * **Jest & React Testing Library** – Unit testing
 * **Netlify** – Hosting (TBD)
 
-## How to Contribute 🤝
+### How to Contribute 🤝
 We welcome contributions to:
 
 * **Backend Development**
@@ -48,11 +48,11 @@ We welcome contributions to:
 
 * **UI/UX Enhancements** – Refine design and accessibility.
 
-## Let’s Connect Education with Compassion! 💙
+### Let’s Connect Education with Compassion! 💙
 Join us in making learning accessible for every child.
 📧 Contact: icuestiona@gmail.com
 
-## Acknowledgments 🙌
+### Acknowledgments 🙌
 * **Women Who Code** – Hackathon for Social Good 2023
 * **React & Open-Source Community** – For amazing tools and libraries.
 
