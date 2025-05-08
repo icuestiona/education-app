@@ -1,5 +1,6 @@
 import React from "react";
 import "./CSS/JoinUs.css";
+import { Link } from "react-router-dom";
 
 const JoinUs = () => {
   return (
@@ -44,10 +45,15 @@ const JoinUs = () => {
         </p>
       </div>
       <div className="join-buttons">
-        <a href="/">Home</a>
-        <a href=" ">Register</a>
-      </div>
+      <a href="/">Home</a>
+        <Link style={{ textDecoration: "none" }} to="/tutor-register">
+          <a href=" ">Register as tutor</a>
+        </Link>
+        </div>
     </div>
   );
 };
 export default JoinUs;
+       
+      
+
