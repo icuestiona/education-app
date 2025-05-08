@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# EnlightNet - Volunteer Tutoring Platform
+_(Finalist in the Hackathon for Social Good 2023 by Women Who Code)_ 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+**EnlightNet** is a web platform that connects volunteers with underprivileged or vulnerable children to support and reinforce their academic development. The platform aims to bridge educational gaps by pairing tutors (teachers, professionals, but also committed citizens willing to donate part of their time) with students based on compatibility factors like age, subjects, and availability.
 
-In the project directory, you can run:
+### Key Features ✅
+* **Matching System (In Progress)** – Algorithm to pair tutors and students based on needs.
+* **Interactive UI** – Built with React.js, styled-components, and responsive design.
+* **Multi-Page Navigation** – React Router for seamless page transitions.
+* **Dynamic Components** – Navbar with dropdown, Hero carousel, and Footer.
+* **Donation & Contact Pages** – Support the initiative.
+  
+### Pending Work 🚧
+* **Matching Algorithm** – Develop a system to pair tutors and students based on:
+  * Age/grade level
+  * Academic subjects needed
+  * Availability/schedule
+  * Language preferences
+* **Volunteer & Student Registration – Forms** to join the program.
+* **Integrated Communication Tool**  – Add video call functionality (e.g., WebRTC or third-party API).
+* **User Dashboard**  – Track sessions, progress, and messages.
 
-### `npm start`
+### Technologies Used 🛠️
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
+* **React.js** (v18.2.0) – Core framework
+* **React Router DOM** (v6.17.0) – Navigation
+* **Styled-Components** (v6.1.0) – CSS-in-JS styling
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Testing & Deployment
+* **Jest & React Testing Library** – Unit testing
+* **Netlify** – Hosting (TBD)
 
-### `npm test`
+### How to Contribute 🤝
+We welcome contributions to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **Backend Development**
+  * **Volunteer & Student Registration Data** (profiles, subjects, availability)
+  * **Matching Algorithm Logic** (pairing tutors with students)
+  * **Session Tracking** (scheduled meetings, progress notes)
+  * **Video Call Integration** – Implement WebRTC or Zoom API.
+  Suggested Backend Stack:
+* ✅ Node.js + Express (REST API)
+* ✅ Database: PostgreSQL / MongoDB / Firebase
+* ✅ Authentication: JWT / OAuth
 
-### `npm run build`
+* **UI/UX Enhancements** – Refine design and accessibility.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Let’s Connect Education with Compassion! 💙
+Join us in making learning accessible for every child.
+📧 Contact: icuestiona@gmail.com
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Acknowledgments 🙌
+* **Women Who Code** – Hackathon for Social Good 2023
+* **React & Open-Source Community** – For amazing tools and libraries.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
