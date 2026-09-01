@@ -13,7 +13,6 @@ import DonationForm from "./Pages/DonationForm";
 import TutorRegistrationForm from "./Pages/TutorRegistrationForm";
 import StudentRegistrationForm from "./Pages/StudentRegistrationForm";
 import MatchMePage from "./Pages/MatchMePage";
-import SessionDashboard from "./Pages/SessionDashboard";
 import VideoCallPage from "./Pages/VideoCallPage";
 import StudentDashboard from "./Pages/StudentDashboard";
 import TutorProfile from "./Pages/TutorProfile";
@@ -36,7 +35,6 @@ const App = () => {
         />
         <Route path="/join" element={<JoinUs />} />
         <Route path="/match" element={<MatchMePage />} />
-        <Route path="/sessions" element={<SessionDashboard />} />
         <Route path="/dashboard" element={<StudentDashboard />} />
         <Route path="/tutor/:tutorId" element={<TutorProfile />} />
         <Route path="/video-call" element={<VideoCallPage />} />

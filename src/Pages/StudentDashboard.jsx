@@ -17,7 +17,7 @@ const StudentDashboard = () => (
   <main className="student-dashboard">
     <section className="student-welcome">
       <div><p className="eyebrow">Student dashboard</p><h1>Welcome back, Alex.</h1><p>Here is a quick look at your learning journey.</p></div>
-      <Link className="dashboard-cta" to="/match">Find a tutor <span>+</span></Link>
+      <div className="dashboard-actions"><Link className="dashboard-cta secondary" to="/match">Find a tutor <span>+</span></Link><Link className="dashboard-cta" to="/video-call">Start a video call <span>→</span></Link></div>
     </section>
     <section className="stat-grid" aria-label="Learning overview">
       <article><span className="stat-icon coral">&#10003;</span><strong>12</strong><p>Sessions completed</p></article>
@@ -27,7 +27,7 @@ const StudentDashboard = () => (
     <div className="dashboard-columns">
       <div className="dashboard-main">
         <section className="dashboard-section"><div className="section-heading"><div><p className="eyebrow">Keep going</p><h2>My progress by subject</h2></div><Link to="/tutors">View tutors</Link></div>{subjects.map((subject) => <div className="progress-row" key={subject.name}><div><strong>{subject.name}</strong><span>{subject.progress}% complete</span></div><div className="progress-track"><span className={subject.color} style={{ width: `${subject.progress}%` }} /></div></div>)}</section>
-        <section className="dashboard-section"><div className="section-heading"><div><p className="eyebrow">Your activity</p><h2>Recent sessions</h2></div><Link to="/sessions">See all</Link></div><div className="activity-list"><div><span className="activity-dot coral" /><p><strong>Algebra foundations</strong><small>With Oscar Simmons · Yesterday</small></p><b>Completed</b></div><div><span className="activity-dot blue" /><p><strong>Reading comprehension</strong><small>With Carla Wilson · 12 Apr</small></p><b>Completed</b></div></div></section>
+        <section className="dashboard-section"><div className="section-heading"><div><p className="eyebrow">Your activity</p><h2>Recent sessions</h2></div><Link to="/video-call">Join a live class</Link></div><div className="activity-list"><div><span className="activity-dot coral" /><p><strong>Algebra foundations</strong><small>With Oscar Simmons · Yesterday</small></p><b>Completed</b></div><div><span className="activity-dot blue" /><p><strong>Reading comprehension</strong><small>With Carla Wilson · 12 Apr</small></p><b>Completed</b></div></div></section>
       </div>
       <aside className="upcoming-panel"><p className="eyebrow">On your calendar</p><h2>Upcoming sessions</h2>{sessions.map((session) => <div className="upcoming-session" key={session.time}><div className="date-block"><strong>{session.day}</strong><span>{session.time}</span></div><p><strong>{session.subject}</strong><span>{session.tutor}</span></p></div>)}<Link className="outline-cta" to="/tutors">Book another session</Link></aside>
     </div>

@@ -32,7 +32,8 @@ const Offers = () => {
           achieve academic goals, improve study habits, and foster a love for
           learning.
         </p>
-        <button>Check Now</button>
+        <a href="/donate">
+        <button>Check Now</button></a>
       </div>
       <div className="offers-right">
         <img src={image} alt="" />

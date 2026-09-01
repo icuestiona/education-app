@@ -38,7 +38,8 @@ const Hero = () => {
             </div>
           </div>
           <div className="find-tutors">
-            <button>Find your tutor</button>
+            <a href="/tutors"><button>Find your tutor</button>
+          </a>
           </div>
         </div>
         <div className="hero-right">

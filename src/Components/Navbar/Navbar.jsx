@@ -16,16 +16,7 @@ const Navbar = () => {
           </Link>
         </div>
         <ul className="nav-links">
-          <li
-            onClick={() => {
-              setMenu("home");
-            }}
-          >
-            <Link style={{ textDecoration: "none" }} to="/">
-              Home
-            </Link>{" "}
-            {menu === "home" ? <hr /> : <></>}
-          </li>
+          
           <li
             onClick={() => {
               setMenu("about");
@@ -55,16 +46,6 @@ const Navbar = () => {
               Match me with Tutors
             </Link>{" "}
             {menu === "match" ? <hr /> : <></>}
-          </li>
-          <li
-            onClick={() => {
-              setMenu("sessions");
-            }}
-          >
-            <Link style={{ textDecoration: "none" }} to="/sessions">
-              Sessions
-            </Link>{" "}
-            {menu === "sessions" ? <hr /> : <></>}
           </li>
           <li onClick={() => setMenu("dashboard")}>
             <Link style={{ textDecoration: "none" }} to="/dashboard">
