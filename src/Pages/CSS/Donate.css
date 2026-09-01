@@ -1,27 +1,17 @@
-.donate-page {
-  background: linear-gradient(to bottom, #f2f2f2, #ffffff);
-  height: 90vh;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding-bottom: 30px;
-}
+.donate-page { max-width: 1100px; margin: 0 auto; padding: 52px 24px 80px; color: #213c4d; }
+.donate-hero { padding: 44px; background: #edf5f9; border-left: 5px solid #ef765f; }
+.donate-hero h1 { max-width: 650px; margin: 0 0 16px; font-size: 48px; line-height: 1.08; }
+.donate-lead { max-width: 540px; color: #5e6c73; font-size: 18px; line-height: 1.6; }
+.donate-button { display: inline-block; margin-top: 12px; padding: 13px 22px; color: #fff; background: #4d7a96; border-radius: 4px; text-decoration: none; font-weight: 700; }
 
-.donate-page .donate-title h1 {
-  font-size: 50px;
-  font-weight: 500;
-  margin: 0;
-  padding: 30px;
-}
+.donate-title { display: none; }
 
 .donate-page .donate-content {
-  width: 80%;
+  width: auto;
   column-count: 2;
   column-gap: 40px;
   column-rule-style: solid;
-  padding: 20px;
+  padding: 28px 0;
   column-rule-width: 1px;
 }
 
@@ -29,25 +19,7 @@
   font-size: 1rem;
   line-height: 1.2;
 }
-
-.donate-button button {
-  display: block;
-  align-items: center;
-  width: 120px;
-  height: 50px;
-  outline: none;
-  border: 1px solid #e3e0e0;
-  border-radius: 75px;
-  color: #f1efef;
-  font-size: 16px;
-  font-weight: 500;
-  background: #ff4141;
-  cursor: pointer;
-  text-decoration: none;
-  margin-top: 50px;
-}
-
-.donate-button button:active {
-  background: rgb(222, 222, 246);
-  transition-duration: 0, 5s;
-}
+.donate-impact { break-inside: avoid; margin-top: 20px; padding: 20px; background: #fff6ee; border-left: 4px solid #ef765f; }
+.donate-impact strong { display: block; font-size: 30px; }
+.donate-impact span { color: #637279; }
+@media (max-width: 700px) { .donate-page { padding: 28px 16px 50px; } .donate-hero { padding: 28px 22px; } .donate-hero h1 { font-size: 34px; } .donate-page .donate-content { column-count: 1; } }

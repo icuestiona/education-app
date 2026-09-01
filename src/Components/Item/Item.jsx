@@ -1,10 +1,11 @@
 import React from "react";
 import "./Item.css";
+import { Link } from "react-router-dom";
 
 const Item = (tutor) => {
   return (
-    <div className="tutor-data">
-      <img src={tutor.image} alt="" />
+    <Link className="tutor-data" to={`/tutor/${tutor.id}`}>
+      <img src={tutor.image} alt={`${tutor.name}, tutor`} />
       <p>{tutor.name}</p>
       <div className="tutor-info">
         <p>{tutor.subject}</p>
@@ -13,7 +14,7 @@ const Item = (tutor) => {
           <p>{tutor.schedule}</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

@@ -6,12 +6,6 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("class");
-  const [showDropdown, setShowDropdown] = useState(false);
-
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
-    setMenu("find-tutors");
-  };
 
   return (
     <nav className="navbar">
@@ -42,16 +36,15 @@ const Navbar = () => {
             </Link>{" "}
             {menu === "about" ? <hr /> : <></>}
           </li>
-          <li className="dropdown" onClick={toggleDropdown}>
-            <span className="dropbtn">Find Tutors</span>
-            {menu === "find-tutors" && <hr />}
-            {showDropdown && (
-              <div className="dropdown-content">
-                <Link to="/tutors">Tutors</Link>
-                <Link to="/subjects">Subjects</Link>
-                <Link to="/availability">Availability</Link>
-              </div>
-            )}
+          <li
+            onClick={() => {
+              setMenu("find-tutors");
+            }}
+          >
+            <Link style={{ textDecoration: "none" }} to="/tutors">
+              Find Tutors
+            </Link>{" "}
+            {menu === "find-tutors" ? <hr /> : <></>}
           </li>
           <li
             onClick={() => {
@@ -62,6 +55,22 @@ const Navbar = () => {
               Match me with Tutors
             </Link>{" "}
             {menu === "match" ? <hr /> : <></>}
+          </li>
+          <li
+            onClick={() => {
+              setMenu("sessions");
+            }}
+          >
+            <Link style={{ textDecoration: "none" }} to="/sessions">
+              Sessions
+            </Link>{" "}
+            {menu === "sessions" ? <hr /> : <></>}
+          </li>
+          <li onClick={() => setMenu("dashboard")}>
+            <Link style={{ textDecoration: "none" }} to="/dashboard">
+              Dashboard
+            </Link>{" "}
+            {menu === "dashboard" ? <hr /> : <></>}
           </li>
           <li
             onClick={() => {

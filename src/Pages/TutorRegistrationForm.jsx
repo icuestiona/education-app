@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./CSS/TutorRegistrationForm.css";
+import { api } from "../Services/Api";
 
 const subjects = [
   "Math",
@@ -74,39 +75,50 @@ const TutorRegistrationForm = () => {
     });
   };
 
-  // Form submission handler
-  const handleSubmit = (e) => {
+  const [status, setStatus] = useState({ type: "idle", message: "" });
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Basic validation example
     if (!formData.firstName || !formData.lastName || !formData.email) {
-      alert("Please fill in your name and email.");
+      setStatus({ type: "error", message: "Please fill in your name and email." });
       return;
     }
     if (formData.subjects.length === 0) {
-      alert("Please select at least one subject.");
+      setStatus({ type: "error", message: "Please select at least one subject." });
       return;
     }
     if (Object.keys(formData.availability).length === 0) {
-      alert("Please select your availability.");
+      setStatus({ type: "error", message: "Please select your availability." });
       return;
     }
 
-    // Here you can integrate with backend API or state management
-    console.log("Form data to submit:", formData);
+    try {
+      setStatus({ type: "loading", message: "Submitting your registration..." });
+      const payload = {
+        name: `${formData.firstName} ${formData.lastName}`.trim(),
+        email: formData.email,
+        subjects: formData.subjects,
+        availability: formData.availability,
+        preferredAgeRanges: formData.preferredAgeRanges,
+        additionalNotes: formData.additionalNotes,
+      };
 
-    alert("Thank you for registering as a volunteer tutor!");
+      const response = await api.post("/tutors/register", payload);
+      setStatus({ type: "success", message: response.message || "Volunteer registration submitted successfully." });
 
-    // Reset form (optional)
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      subjects: [],
-      availability: {},
-      preferredAgeRanges: [],
-      additionalNotes: "",
-    });
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        subjects: [],
+        availability: {},
+        preferredAgeRanges: [],
+        additionalNotes: "",
+      });
+    } catch (error) {
+      setStatus({ type: "error", message: error.message || "Unable to submit registration." });
+    }
   };
 
   return (
@@ -225,8 +237,14 @@ const TutorRegistrationForm = () => {
         />
       </div>
 
-      <button type="submit" className="btn-submit">
-        Register
+      {status.message && (
+        <p className={`form-status ${status.type}`} role="status" aria-live="polite">
+          {status.message}
+        </p>
+      )}
+
+      <button type="submit" className="btn-submit" disabled={status.type === "loading"}>
+        {status.type === "loading" ? "Submitting..." : "Register"}
       </button>
     </form>
   );

@@ -13,6 +13,7 @@ const Popular = () => {
           return (
             <Item
               key={tutor.id}
+              id={tutor.id}
               name={tutor.name}
               subject={tutor.subject}
               availability={tutor.availability}

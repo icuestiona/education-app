@@ -18,7 +18,7 @@ const Hero = () => {
             </div>
             <div className="hero-presentation">
               <p>
-                <strong>EnligthNet</strong> is a hub for transformative learning
+                <strong>EnlightNet</strong> is a hub for transformative learning
                 that connects compassionate tutors with eager young learners,
                 breaking barriers to education.{" "}
               </p>

@@ -4,56 +4,47 @@ import { Link } from "react-router-dom";
 
 const JoinUs = () => {
   return (
-    <div className="join-page">
-      <div className="join-title">
-        <h1> Join Us: Become a Changemaker! </h1>
-      </div>
-      <div className="join-content">
+    <main className="join-page">
+      <section className="join-hero">
+        <p className="eyebrow">Volunteer with us</p>
+        <h1>Join us and help every child thrive.</h1>
+      </section>
+
+      <section className="join-content" aria-label="Why join our programme">
         <p>
-          Are you ready to make a profound impact in the lives of children and
-          teenagers in need of academic support? At <strong>EnlightNet</strong>,
-          we're on a mission to create brighter futures, and we invite you to be
-          a part of this incredible journey.
+          At <strong>EnlightNet</strong>, we connect caring volunteers with children
+          who need encouragement, structure, and academic support. Your time can
+          help close learning gaps and spark confidence.
         </p>
         <p>
-          As a volunteer tutor, you have the power to inspire, share your
-          expertise, and inspire the next generation. It's an opportunity to
-          connect, mentor, and bridge generations, all while shaping promising
-          tomorrows.
+          As a tutor, mentor, or student advocate, you can share expertise in the
+          subjects your community needs most. We match volunteers with learners
+          based on availability, subject fit, and grade level.
         </p>
         <p>
-          Our platform is committed to providing a nurturing, inclusive, and
-          secure environment for children and adolescents. Here, you'll be
-          joining a community of like-minded individuals who are dedicated to
-          creating a more equal and brighter society
+          We care deeply about safety, inclusivity, and clear communication. Every
+          session is designed to be respectful, supportive, and measurable so the
+          impact is meaningful for everyone.
         </p>
         <p>
-          At <strong>EnlightNet</strong>, we're unwavering in our commitment to
-          offering a healthy and safe environment for children and adolescents.
-          We believe in a nurturing, inclusive, and secure space for their
-          growth and development.
+          Whether you are a teacher, student, professional, or community member, we
+          welcome your support. Together, we are building a stronger future for the
+          next generation.
         </p>
-        <p>
-          Take the first step toward making a real difference, and join us as a
-          volunteer tutor. Together, we'll empower dreams and open doors to new
-          possibilities. Your knowledge, experience, and passion can shape the
-          future.{" "}
-        </p>
-        <p>
-          Let's create a world where every child's potential is a promise. Click
-          below to join our team of Changemakers!"
-        </p>
-      </div>
-      <div className="join-buttons">
-      <a href="/">Home</a>
-        <Link style={{ textDecoration: "none" }} to="/tutor-register">
-          <a href=" ">Register as tutor</a>
+      </section>
+
+      <div className="join-buttons" aria-label="Join actions">
+        <Link className="primary-action" to="/tutor-register">
+          Register as tutor
         </Link>
-        </div>
-    </div>
+        <Link className="secondary-action" to="/student-register">
+          Register as student
+        </Link>
+      </div>
+    </main>
   );
 };
+
 export default JoinUs;
-       
-      
+
 

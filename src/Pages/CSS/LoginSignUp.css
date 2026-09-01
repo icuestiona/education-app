@@ -1,12 +1,16 @@
+.auth-page { max-width: 1100px; margin: 0 auto; padding: 52px 24px 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+.auth-aside { padding: 30px 0; }
+.auth-aside h1 { color: #213c4d; font-size: 45px; line-height: 1.08; margin: 0 0 16px; }
+.auth-aside p:not(.eyebrow) { color: #637279; line-height: 1.7; max-width: 390px; }
 .container {
   display: flex;
-  height: 90vh;
+  min-height: 620px;
   flex-direction: column;
   margin: auto;
-  margin-top: 70px;
-  width: 600px;
+  margin: 0;
+  width: auto;
   background: #fff;
-  padding-bottom: 30px;
+  padding: 20px 35px 30px;
   background-color: #edf5f9;
 }
 
@@ -21,7 +25,7 @@
 
 .text {
   color: #213c4d;
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700px;
 }
 
@@ -43,7 +47,7 @@
   display: flex;
   align-items: center;
   margin: auto;
-  width: 480px;
+  width: 100%;
   height: 80px;
   background: #eaeaea;
   border-radius: 6px;
@@ -55,7 +59,7 @@
 
 .input input {
   height: 50px;
-  width: 400px;
+  width: 100%;
   background: transparent;
   border: none;
   outline: none;
@@ -85,7 +89,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 220px;
+  width: 100%;
   height: 59px;
   color: #fff;
   background: #4d7a96;
@@ -107,7 +111,8 @@
   font-weight: 500;
 }
 .logingsignup-agree {
-  padding-left: 62px;
+  padding-left: 0;
   color: #797979;
   font-size: 18px;
 }
+@media (max-width: 760px) { .auth-page { grid-template-columns: 1fr; padding: 28px 16px 50px; gap: 10px; } .auth-aside { padding: 0; } .auth-aside h1 { font-size: 34px; } .container { min-height: 0; padding: 18px 20px 25px; } .input { width: 100%; } .submit-container { gap: 12px; margin: 35px auto; } }

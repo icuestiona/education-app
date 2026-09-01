@@ -4,11 +4,14 @@ import { Link } from "react-router-dom";
 
 const Donate = () => {
   return (
-    <div className="donate-page">
-      <div className="donate-title">
-        <h1> Every Click Lights the Path of Learning </h1>
-      </div>
-      <div className="donate-content">
+    <main className="donate-page">
+      <section className="donate-hero">
+        <p className="eyebrow">Support free education</p>
+        <h1>Every click lights the path of learning</h1>
+        <p className="donate-lead">Your gift gives a child the tools, time, and trusted support to keep learning.</p>
+        <Link className="donate-button" to="/donate-now">Donate now</Link>
+      </section>
+      <section className="donate-content">
         <p>
           Welcome to the heart of our cause! Your generosity fuels our mission
           to provide free, top-notch online tutoring and mentorship to children
@@ -27,18 +30,12 @@ const Donate = () => {
           Together, we can break barriers, unlock potential, and create lasting
           change.
         </p>
-        <p>
-          Every donation counts and takes us one step closer to a world where
-          education knows no bounds. Join hands with us in this noble
-          endeavor—click below to make a donation and be a beacon of hope! 💫✨"
-        </p>
-      </div>
-      <div className="donate-button">
-        <Link style={{ textDecoration: "none" }} to="/donate-now">
-          <button>Donate Now</button>
-        </Link>
-      </div>
-    </div>
+        <div className="donate-impact">
+          <strong>100%</strong>
+          <span>of your donation supports the learning experience</span>
+        </div>
+      </section>
+    </main>
   );
 };
 
